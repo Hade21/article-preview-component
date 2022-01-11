@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope';
+    font-size: 13px;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+}
+.container{
+    width: 50%;
+    text-align: center;
+    margin: 80px auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: stretch;
+    background-color: #FFFFFF;
+}
+.img-drawers{
+    width: 37.5%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 0 0 20px;
+}
+.text{
+    width: 62.5%;
+    padding: 30px 40px;
+    text-align: left;
+}
+.section-title{
+    font-size: 18px;
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+.desc{
+    color: hsl(214, 17%, 51%);
+    line-height: 22px;
+    margin-top: 20px;
+}
+.avatar{
+    width: 40px;
+    border-radius: 50%;
+    grid-column: 1/2;
+}
+.creator{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 12% 68% 20%;
+}
+.name{
+    margin-left: 10px;
+    justify-self: flex-start;
+    grid-column: 2/3;
+}
+.name-writer{
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+.date{
+    color: hsl(212, 23%, 69%);
+}
+.icon-share{
+    display: grid;
+    grid-column: 3/4;
+    position: relative;
+}
+.share-group{
+    position: absolute;
+    background-color: hsl(217, 19%, 35%);
+    padding: 16px 30px;
+    display: none;
+    justify-content: center;
+    border-radius: 10px;
+    z-index: 1;
+    top: -170%;
+    left: -125%;
+    box-shadow: 0 1px 8px 0 hsl(212, 23%, 69%);
+}
+.share-group::before{
+    content: '';
+    width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-top: 45px solid hsl(217, 19%, 35%);
+    position: absolute;
+    z-index: -1;
+}
+.share{
+    align-self: center;
+    justify-self: center;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+}
+.item{
+    margin: 0 8px;
+    color: #FFFFFF;
+    font-size: 12px;
+    align-self: center;
+}
+.share-txt{
+    letter-spacing: 5px;
+    color: hsl(212, 23%, 69%);
+}
+.fb, .twitter, .pinterest{
+    width: 18px;
+}
+.share:hover{
+    background-color: hsl(214, 17%, 51%);
+}
+.active{
+    background-color: hsl(214, 17%, 51%);
+    color: #FFFFFF;
+}
+.show{
+    display: flex;
+}
