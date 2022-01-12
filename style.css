@@ -141,7 +141,10 @@ body{
     .name{
         margin-left: 20px;
     }
-    .share-group{
+    .share-group::before{
+        display: none;
+    }
+    .share-group-active{
         display: flex;
         width: calc(100% - 1.6em);
         box-shadow: none;
@@ -150,20 +153,17 @@ body{
         border-radius: 0 0 10px 10px;
         justify-content: flex-start;
     }
-    .share-group::before{
-        display: none;
-    }
-    .share{
+    .share-active{
         z-index: 2;
         justify-self: end;
         position: absolute;
         top: .7em;
-        right: 1.5em;
+        right: 1em;
     }
-    .creator{
+    .creator-active{
         grid-template-columns: 0% 0% 100%;
     }
-    .avatar, .name{
+    .avatar-active, .name-active{
         display: none;
     }
 }
