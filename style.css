@@ -13,7 +13,7 @@ body{
     width: 50%;
     text-align: center;
     margin: 80px auto;
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     justify-content: stretch;
     background-color: #FFFFFF;
@@ -22,7 +22,7 @@ body{
     width: 37.5%;
     object-fit: cover;
     object-position: center;
-    border-radius: 20px 0 0 20px;
+    border-radius: 10px 0 0 10px;
 }
 .text{
     width: 62.5%;
@@ -117,4 +117,53 @@ body{
 }
 .show{
     display: flex;
+}
+
+@media (max-width: 450px) {
+    .container{
+        display: block;
+        width: 90%;
+    }
+    .img-drawers{
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    .text{
+        width: fit-content;
+        padding: 20px;
+    }
+    .section-title{
+        font-size: 16px;
+    }
+    .desc{
+        margin-top: 10px;
+    }
+    .name{
+        margin-left: 20px;
+    }
+    .share-group{
+        display: flex;
+        width: calc(100% - 1.6em);
+        box-shadow: none;
+        top: 0;
+        left: -1.5em;
+        border-radius: 0 0 10px 10px;
+        justify-content: flex-start;
+    }
+    .share-group::before{
+        display: none;
+    }
+    .share{
+        z-index: 2;
+        justify-self: end;
+        position: absolute;
+        top: .7em;
+        right: 1.5em;
+    }
+    .creator{
+        grid-template-columns: 0% 0% 100%;
+    }
+    .avatar, .name{
+        display: none;
+    }
 }
